@@ -1,0 +1,41 @@
+.Navbar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    height: 60px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px; /* Added padding for spacing */
+        max-width: 1200px; /* Limit maximum width for better alignment */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .right-side {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .logout {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--accent-color); /* Use accent color for emphasis */
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+
+            &:hover {
+                color: (var(--accent-color), 10%); /* Darker color on hover */
+                transform: scale(1.1); /* Slight scaling effect on hover */
+            }
+        }
+    }
+}

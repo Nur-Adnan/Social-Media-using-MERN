@@ -1,0 +1,48 @@
+.Follower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 20px; /* Added padding for spacing */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+
+    &:hover {
+        transform: scale(1.02); /* Slight scaling effect on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Reduced gap for tighter layout */
+        cursor: pointer;
+        transition: color 0.3s ease; /* Smooth transition for color change */
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden; /* Ensure image does not overflow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        }
+
+        .username {
+            font-weight: bold; /* Bold font for emphasis */
+            color: #333; /* Dark text for readability */
+        }
+
+        &:hover .username {
+            color: var(--accent-color); /* Change color on hover */
+        }
+    }
+
+    .follow-link {
+        color: var(--accent-color);
+        font-weight: 500; /* Slightly bold for better emphasis */
+        cursor: pointer;
+        transition: color 0.3s ease; /* Smooth transition for color change */
+    }
+}

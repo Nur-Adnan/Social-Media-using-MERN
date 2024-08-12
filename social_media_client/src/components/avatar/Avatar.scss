@@ -1,0 +1,21 @@
+.Avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image does not overflow the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Smooth scaling transition */
+    }
+
+    &:hover {
+        transform: scale(1.05); /* Slight scaling on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    }
+}

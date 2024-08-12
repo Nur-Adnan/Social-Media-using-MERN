@@ -1,0 +1,40 @@
+.Feed {
+    margin-top: 60px;
+    padding: 20px; /* Added padding for better spacing */
+    background-color: #f9f9f9; /* Light background for the feed area */
+
+    .container {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start; /* Align items at the top */
+    }
+
+    .left-part {
+        flex: 2;
+        overflow-y: auto;
+        padding-right: 10px; /* Added padding for better scrolling experience */
+        border-right: 1px solid #ddd; /* Light border for separation */
+        height: calc(100vh - 80px); /* Ensures it remains within the viewport */
+    }
+
+    .right-part {
+        flex: 1;
+        margin-top: 20px;
+        padding-left: 10px; /* Added padding for visual separation */
+    }
+
+    .suggestions {
+        margin-top: 40px;
+        padding: 15px; /* Padding for better spacing */
+        background-color: #fff; /* Background color for suggestions */
+        border-radius: 8px; /* Rounded corners for a modern look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    }
+
+    .title {
+        margin-bottom: 12px;
+        font-size: 1.25rem; /* Slightly larger font size for emphasis */
+        font-weight: bold; /* Bold font for better readability */
+        color: #333; /* Darker text color for contrast */
+    }
+}

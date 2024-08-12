@@ -1,0 +1,73 @@
+.Post {
+    border: 1px solid var(--border-color);
+    margin-top: 20px;
+    border-radius: 8px; /* Increased radius for softer edges */
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure contents don't overflow the border radius */
+
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Adjusted gap for tighter layout */
+        height: 60px;
+        padding: 15px 20px; /* Reduced padding for a cleaner look */
+        cursor: pointer;
+        border-bottom: 1px solid var(--border-color); /* Divider for separation */
+        transition: background-color 0.3s ease; /* Smooth background transition */
+
+        &:hover {
+            background-color: #f7f7f7; /* Light background change on hover */
+        }
+    }
+
+    .content {
+        height: 400px;
+        background-color: #f9f9f9; /* Background color for loading */
+        overflow: hidden; /* Ensure images don't overflow */
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth scaling effect */
+        }
+
+        &:hover img {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+        }
+    }
+
+    .footer {
+        padding: 20px;
+
+        .like {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease; /* Smooth color transition */
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--accent-color); /* Accent color for icons */
+            }
+
+            &:hover .icon {
+                color: (var(--accent-color), 10%); /* Darker color on hover */
+            }
+        }
+
+        .caption {
+            margin-top: 12px;
+            color: #333; /* Darker color for readability */
+            line-height: 1.5; /* Improved line height for text */
+        }
+
+        .time-ago {
+            margin-top: 12px;
+            color: #aaa;
+            font-size: 0.875rem; /* Slightly smaller text for timestamps */
+        }
+    }
+}
